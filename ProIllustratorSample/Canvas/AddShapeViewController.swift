@@ -7,7 +7,7 @@ The view controller shown when adding a new shape to the canvas.
 
 import UIKit
 
-protocol AddShapeViewControllerDelegate: class {
+protocol AddShapeViewControllerDelegate: AnyObject {
     func addShapeViewController(_: AddShapeViewController, didSelectShapeStyle style: Shape.Style)
 }
 

@@ -16,7 +16,7 @@ import Foundation
 
 /// - Tag: GlobalKeyboardShortcutRespondable
 @objc
-protocol GlobalKeyboardShortcutRespondable: class {
+protocol GlobalKeyboardShortcutRespondable: AnyObject {
     /// Mapped to Command-N
     @objc
     optional func createNewItem(_: Any?)

@@ -7,7 +7,7 @@ A view controller that shows a list of files.
 
 import UIKit
 
-protocol FileListViewControllerDelegate: class {
+protocol FileListViewControllerDelegate: AnyObject {
     func fileListViewController(_: FileListViewController, didSelectFile file: IllustrationFile)
 }
 
